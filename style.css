@@ -125,32 +125,6 @@ section {
     overflow: hidden;
 }
 
-.with-image-panel {
-    background-color: #f2f2f2;
-}
-
-.about-content {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.about-text {
-    flex: 1;
-}
-
-.about-image-container {
-    flex-shrink: 0;
-    max-width: 400px;
-}
-
-.about-image-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
 .background-image-section {
     background-size: cover;
     background-position: center;
@@ -160,6 +134,10 @@ section {
 .background-image-section .overlay {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 80px 0;
+}
+
+#about .overlay {
+    background-color: rgba(0, 0, 0, 0.95);
 }
 
 .background-image-section h2, .background-image-section h3 {
@@ -192,6 +170,10 @@ section {
     background-color: rgba(0, 0, 0, 0.5);
     transform: translateY(-8px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+#about .about-content .about-text p {
+    color: white;
 }
 
 h2 {
