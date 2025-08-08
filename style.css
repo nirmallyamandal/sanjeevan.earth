@@ -132,12 +132,12 @@ section {
 }
 
 .background-image-section .overlay {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 80px 0;
 }
 
 #about .overlay {
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .background-image-section h2, .background-image-section h3 {
@@ -159,7 +159,7 @@ section {
 .background-image-section .approach-item,
 .background-image-section .implementation-item,
 .background-image-section .benefits-list li {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 15px;
@@ -167,7 +167,7 @@ section {
 }
 
 .background-image-section .approach-item:hover, .background-image-section .implementation-item:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     transform: translateY(-8px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
