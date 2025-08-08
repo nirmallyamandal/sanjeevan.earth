@@ -244,7 +244,7 @@ h3 {
     color: #444;
 }
 
-.partner-logos {
+.partner-logos-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,7 +253,7 @@ h3 {
     margin-top: 20px;
 }
 
-.partner-logos img {
+.partner-logos-container img {
     height: 100px;
     width: auto;
     max-width: 150px;
@@ -261,7 +261,7 @@ h3 {
     transition: transform 0.3s ease;
 }
 
-.partner-logos img:hover {
+.partner-logos-container img:hover {
     transform: scale(1.1);
 }
 
@@ -387,7 +387,7 @@ footer p {
     .work-details {
         grid-template-columns: 1fr;
     }
-    .partner-logos {
+    .partner-logos-container {
         flex-direction: column;
         gap: 30px;
     }
