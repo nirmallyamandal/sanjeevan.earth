@@ -78,6 +78,18 @@ body {
     background: #FFD700;
 }
 
+.header-logos {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-logos img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
 #hero {
     background-image: url('hero-background.jpg');
     background-size: cover;
@@ -244,7 +256,7 @@ h3 {
     margin-bottom: 20px;
 }
 
-.white-background-section .partner-logos {
+.white-background-section .partner-logos-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,7 +265,7 @@ h3 {
     margin-top: 20px;
 }
 
-.partner-logos img {
+.partner-logos-container img {
     height: 100px;
     width: auto;
     max-width: 150px;
@@ -261,7 +273,7 @@ h3 {
     transition: transform 0.3s ease;
 }
 
-.partner-logos img:hover {
+.partner-logos-container img:hover {
     transform: scale(1.1);
 }
 
@@ -387,7 +399,7 @@ footer p {
     .work-details {
         grid-template-columns: 1fr;
     }
-    .partner-logos {
+    .partner-logos-container {
         flex-direction: column;
         gap: 30px;
     }
