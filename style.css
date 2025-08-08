@@ -2,13 +2,13 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8; /* Lighter background for a cleaner look */
+    background-color: #f8f8f8;
     color: #444;
     line-height: 1.8;
 }
 
 .container {
-    max-width: 1000px; /* Slightly wider container */
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -34,7 +34,8 @@ body {
 }
 
 .logo {
-    height: 80px;
+    height: 80px; /* Larger Sanjeevan logo */
+    width: auto;
     margin-right: 20px;
 }
 
@@ -167,8 +168,9 @@ h3 {
 }
 
 .partner-logos img {
-    height: 100px;
-    width: 150px;
+    height: 100px; /* Uniform height for all partner logos */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 150px; /* Ensure logos don't get too wide */
     object-fit: contain;
     transition: transform 0.3s ease;
 }
