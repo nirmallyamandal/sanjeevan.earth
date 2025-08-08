@@ -80,8 +80,8 @@ body {
 
 #hero {
     background-image: url('hero-background.jpg');
-    background-size: cover; /* Corrected: The background image will now cover the entire section */
-    background-position: center; /* Corrected: The image will be centered */
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     color: white;
     padding: 120px 0;
@@ -125,10 +125,15 @@ section {
     overflow: hidden;
 }
 
+section:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
 .background-image-section {
     background-size: cover;
     background-position: center;
     color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 
 .background-image-section .overlay {
@@ -136,12 +141,8 @@ section {
     padding: 80px 0;
 }
 
-.background-image-section h2 {
+.background-image-section h2, .background-image-section h3 {
     color: white;
-}
-
-.background-image-section h3 {
-    color: #FFD700;
 }
 
 .background-image-section .section-description,
@@ -151,8 +152,16 @@ section {
     color: white;
 }
 
-section:nth-child(even) {
-    background-color: #f2f2f2;
+.background-image-section .approach-item,
+.background-image-section .benefits-list {
+    background-color: transparent; /* Remove background on items */
+    box-shadow: none; /* Remove shadow to make text float over the background */
+    padding: 0;
+}
+
+.background-image-section .benefits-list li {
+    background-color: rgba(255,255,255,0.2); /* Slight transparent background for list items */
+    box-shadow: none;
 }
 
 h2 {
@@ -219,7 +228,7 @@ h3 {
 }
 
 .approach-item, .implementation-item {
-    background: rgba(255, 255, 255, 0.9);
+    background: #fff;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -279,10 +288,18 @@ h3 {
 }
 
 .benefits-list {
-    list-style-type: disc;
-    padding-left: 20px;
+    list-style-type: none;
+    padding-left: 0;
     max-width: 700px;
     margin: 0 auto;
+}
+
+.benefits-list li {
+    margin-bottom: 15px;
+}
+
+.benefits-list li strong {
+    color: #FFD700;
 }
 
 #contact .contact-card {
