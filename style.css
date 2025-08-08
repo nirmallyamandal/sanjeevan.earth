@@ -133,7 +133,6 @@ section:nth-child(even) {
     background-size: cover;
     background-position: center;
     color: white;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 
 .background-image-section .overlay {
@@ -143,6 +142,7 @@ section:nth-child(even) {
 
 .background-image-section h2, .background-image-section h3 {
     color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 
 .background-image-section .section-description,
@@ -152,16 +152,18 @@ section:nth-child(even) {
     color: white;
 }
 
-.background-image-section .approach-item,
-.background-image-section .benefits-list {
-    background-color: transparent; /* Remove background on items */
-    box-shadow: none; /* Remove shadow to make text float over the background */
-    padding: 0;
+.background-image-section .approach-item, .background-image-section .benefits-list li {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-.background-image-section .benefits-list li {
-    background-color: rgba(255,255,255,0.2); /* Slight transparent background for list items */
-    box-shadow: none;
+.background-image-section .approach-item:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 h2 {
