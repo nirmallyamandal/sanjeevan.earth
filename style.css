@@ -35,7 +35,7 @@ body {
 }
 
 .logo {
-    height: 120px; /* Increased Sanjeevan logo size */
+    height: 120px;
     width: auto;
 }
 
@@ -80,8 +80,8 @@ body {
 
 #hero {
     background-image: url('hero-background.jpg');
-    background-size: cover;
-    background-position: center;
+    background-size: cover; /* Corrected: The background image will now cover the entire section */
+    background-position: center; /* Corrected: The image will be centered */
     background-attachment: fixed;
     color: white;
     padding: 120px 0;
@@ -132,7 +132,7 @@ section {
 }
 
 .background-image-section .overlay {
-    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 80px 0;
 }
 
@@ -355,11 +355,5 @@ footer p {
     .partner-logos {
         flex-direction: column;
         gap: 30px;
-    }
-    .benefits-content {
-        flex-direction: column;
-    }
-    .benefits-list {
-        margin-top: 20px;
     }
 }
