@@ -1,182 +1,269 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2822
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
 
-\f0\fs24 \cf0 body \{\
-    font-family: 'Poppins', sans-serif;\
-    margin: 0;\
-    padding: 0;\
-    background-color: #f4f4f4;\
-    color: #333;\
-    line-height: 1.6;\
-\}\
-\
-.container \{\
-    max-width: 960px;\
-    margin: 0 auto;\
-    padding: 20px;\
-\}\
-\
-header \{\
-    background-color: #4CAF50;\
-    color: white;\
-    padding: 10px 0;\
-    text-align: center;\
-    border-bottom: 5px solid #388E3C;\
-\}\
-\
-header .container \{\
-    display: flex;\
-    align-items: center;\
-    justify-content: center;\
-\}\
-\
-header h1 \{\
-    margin: 0;\
-    font-size: 2.5em;\
-    font-weight: 600;\
-\}\
-\
-/* Sanjeevan Logo is bigger */\
-.logo \{\
-    height: 80px;\
-    margin-right: 20px;\
-\}\
-\
-/* Updated hero section with background image */\
-#hero \{\
-    background-image: url('hero-background.jpg');\
-    background-size: cover;\
-    background-position: center;\
-    background-attachment: fixed;\
-    color: white; /* Text color changed for readability */\
-    padding: 100px 0;\
-    position: relative;\
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow to the text */\
-\}\
-\
-#hero .container \{\
-    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay for text legibility */\
-    padding: 40px;\
-    border-radius: 8px;\
-\}\
-\
-section \{\
-    padding: 40px 0;\
-    border-bottom: 1px solid #ddd;\
-\}\
-\
-section:nth-child(even) \{\
-    background-color: #e9e9e9;\
-\}\
-\
-h2 \{\
-    color: #4CAF50;\
-    text-align: center;\
-    margin-bottom: 20px;\
-    font-size: 2em;\
-    border-bottom: 2px solid #4CAF50;\
-    display: inline-block;\
-    padding-bottom: 5px;\
-\}\
-\
-h3 \{\
-    color: #388E3C;\
-    font-size: 1.5em;\
-    margin-top: 25px;\
-\}\
-\
-ul \{\
-    list-style-type: disc;\
-    padding-left: 20px;\
-\}\
-\
-li \{\
-    margin-bottom: 10px;\
-\}\
-\
-.benefits-img \{\
-    display: block;\
-    max-width: 100%;\
-    height: auto;\
-    margin: 20px auto;\
-\}\
-\
-.image-grid \{\
-    display: grid;\
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\
-    gap: 15px;\
-    margin-top: 20px;\
-\}\
-\
-.image-grid img \{\
-    width: 100%;\
-    height: 200px;\
-    object-fit: cover;\
-    border-radius: 8px;\
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);\
-\}\
-\
-.partner-logos \{\
-    display: flex;\
-    justify-content: center;\
-    align-items: center;\
-    gap: 30px;\
-    margin-top: 30px;\
-\}\
-\
-.partner-logos img \{\
-    height: 100px;\
-    width: 100px;\
-    object-fit: contain;\
-    transition: transform 0.3s ease;\
-\}\
-\
-.partner-logos img:hover \{\
-    transform: scale(1.1);\
-\}\
-\
-#contact .contact-card \{\
-    text-align: center;\
-    padding: 20px;\
-    background-color: #fff;\
-    border-radius: 8px;\
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);\
-\}\
-\
-.whatsapp-btn \{\
-    display: inline-flex;\
-    align-items: center;\
-    padding: 10px 20px;\
-    background-color: #25D366;\
-    color: white;\
-    text-decoration: none;\
-    font-weight: 600;\
-    border-radius: 50px;\
-    margin-top: 15px;\
-    transition: background-color 0.3s ease;\
-\}\
-\
-.whatsapp-btn:hover \{\
-    background-color: #128C7E;\
-\}\
-\
-.whatsapp-logo \{\
-    height: 20px;\
-    margin-right: 10px;\
-\}\
-\
-footer \{\
-    background-color: #333;\
-    color: white;\
-    text-align: center;\
-    padding: 20px 0;\
-    margin-top: 20px;\
-\}\
-\
-footer p \{\
-    margin: 0;\
-\}}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 5px solid #388E3C;
+}
+
+.main-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.logo {
+    height: 80px;
+    margin-right: 20px;
+}
+
+#hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 100px 0;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px 0;
+}
+
+#hero h2 {
+    color: white;
+    font-size: 2.5em;
+    font-weight: 600;
+    border-bottom: none;
+    display: block;
+    margin: 0 0 20px 0;
+    padding: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+#hero p {
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+section {
+    padding: 60px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+section:nth-child(even) {
+    background-color: #e9e9e9;
+}
+
+h2 {
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    background: #4CAF50;
+    bottom: -10px;
+    left: 20%;
+}
+
+.section-description {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    font-weight: 300;
+}
+
+h3 {
+    color: #388E3C;
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.focus-list, .work-list, .problem-list, .vision-list {
+    list-style-type: none;
+    padding-left: 0;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.focus-list li, .work-list li, .problem-list li, .vision-list li {
+    background: #fff;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.work-list li strong {
+    color: #388E3C;
+}
+
+.approach-grid, .implementation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.approach-item, .implementation-item {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.approach-item:hover, .implementation-item:hover {
+    transform: translateY(-5px);
+}
+
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.partner-logos img {
+    height: 100px;
+    width: auto;
+    max-width: 150px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.partner-logos img:hover {
+    transform: scale(1.1);
+}
+
+.work-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.work-col h3 {
+    text-align: center;
+}
+
+.benefits-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefits-img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto 40px auto;
+}
+
+.benefits-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#contact .contact-card {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 25px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+}
+
+.whatsapp-logo {
+    height: 20px;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 2em;
+    }
+
+    .logo {
+        height: 60px;
+    }
+
+    #hero h2 {
+        font-size: 2em;
+    }
+
+    .work-details {
+        grid-template-columns: 1fr;
+    }
+
+    .partner-logos {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
