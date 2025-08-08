@@ -105,7 +105,7 @@ body {
 }
 
 #hero h2 {
-    color: white;
+    color: #FFD700;
     font-size: 1.8em;
     font-weight: 400;
     margin: 10px 0 20px 0;
@@ -240,11 +240,11 @@ h3 {
     color: #444;
 }
 
-#partners-logos h2, #partners-logos h3 {
+#partners h2 {
     color: #3C6E3D;
 }
 
-#partners-logos h2::after {
+#partners h2::after {
     background: #3C6E3D;
 }
 
