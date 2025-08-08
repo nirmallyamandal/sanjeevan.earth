@@ -1,380 +1,230 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-    color: #444;
-    line-height: 1.8;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjeevan: Integrated Agroforestry and Regenerative Agriculture</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
 
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-}
+    <header class="main-header">
+        <div class="container">
+            <a href="#hero" class="brand-link">
+                <img src="logo.png" alt="Sanjeevan Logo" class="logo">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#focus-areas">Focus</a></li>
+                    <li><a href="#our-approach">Approach</a></li>
+                    <li><a href="#how-we-work">Method</a></li>
+                    <li><a href="#our-work">Work</a></li>
+                    <li><a href="#implementation">Model</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-.main-header {
-    background-color: #3C6E3D;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <div class="container">
+                    <h1>Sanjeevan</h1>
+                    <h2>Integrated Agroforestry and Regenerative Agriculture</h2>
+                    <p>Sanjeevan is a collaborative initiative focused on transforming local ecosystems through Integrated Agroforestry and Regenerative Agriculture. Rooted in a systems-based approach, it combines the ecological benefits of agroforestry with the soil-restoring and climate-smart practices of regenerative agriculture. The aim is to build local climate-resilient, biodiverse, and productive landscapes that generate sustainable livelihoods, improve local nutrition, and strengthen market systems that drive lasting change.</p>
+                </div>
+            </div>
+        </section>
 
-.main-header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+        <section id="about" class="background-image-section" style="background-image: url('20230816-7849.jpg');">
+            <div class="overlay">
+                <div class="container">
+                    <h2>What We Specialize In</h2>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>We work in regions and communities on the frontier—areas facing acute risks of agricultural collapse, livelihood loss, and nutritional insecurity. At a systems level, the core challenge is how to regenerate and productively use existing resources, moving away from extractive practices toward restorative, circular approaches.</p>
+                            <p>Sanjeevan is a collaborative initiative focused on transforming local ecosystems through Integrated Agroforestry and Regenerative Agriculture. Rooted in a systems-based approach, it combines the ecological benefits of agroforestry with the soil-restoring and climate-smart practices of regenerative agriculture. The aim is to build local climate-resilient, biodiverse, and productive landscapes that generate sustainable livelihoods, improve local nutrition, and strengthen market systems that drive lasting change.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-.brand-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-}
+        <section id="focus-areas" class="background-image-section" style="background-image: url('IMG_0402.jpg');">
+            <div class="overlay">
+                <div class="container">
+                    <h2>Thematic Focus Areas</h2>
+                    <ul class="focus-list">
+                        <li><strong>Whole Food Systems Approach</strong></li>
+                        <li><strong>Agroforestry, Ecological Restoration & NTFPs</strong></li>
+                        <li><strong>Carbon Sequestration & Regenerative Practices</strong></li>
+                        <li><strong>Circular Bioeconomy</strong></li>
+                        <li><strong>Gender Mainstreaming in Agriculture and Forestry</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-.logo {
-    height: 120px;
-    width: auto;
-}
+        <section id="our-approach" class="background-image-section" style="background-image: url('20230816-8058.jpg');">
+            <div class="overlay">
+                <div class="container">
+                    <h2>Our Approach</h2>
+                    <div class="approach-grid">
+                        <div class="approach-item">
+                            <h3>Reinforce conservation and productivity</h3>
+                            <p>Our integrated agroforestry model is anchored around local water sources, where agricultural practices and livelihood activities are designed to reinforce conservation and productivity. Rather than depleting resources, we are building localized ecosystems that sustain themselves that enhance water efficiency, improving yields, and contributing to better nutrition and income at the community level.</p>
+                        </div>
+                        <div class="approach-item">
+                            <h3>Access to marketplace</h3>
+                            <p>We are building market systems by enabling knowledge, access, and connection through structured marketplace mechanisms. Our market linkage strategy includes product tracing, value addition activities such as processing, and alignment with market demand through ongoing analysis. These interventions also generate income by enabling access to carbon markets.</p>
+                        </div>
+                        <div class="approach-item">
+                            <h3>Enabling technology adoption</h3>
+                            <p>Solar power is a key enabler in our approach, providing reliable energy for water pumps, drip irrigation systems, soil moisture sensors, dryers, and other essential infrastructure. In many of the regions where we work, we harness the abundance of sunlight to sustainably meet these energy needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-.main-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
+        <section id="how-we-work" class="background-image-section" style="background-image: url('IMG_2640.jpg');">
+            <div class="overlay">
+                <div class="container">
+                    <h2>How We Work</h2>
+                    <p class="section-description">We work at the intersection of landscapes, livelihoods, and climate resilience—starting with place-based diagnostics and growing into long-term, systemic partnerships.</p>
+                    <ol class="work-list">
+                        <li><strong>Identify Transformative Ecosystems:</strong> We begin by identifying local agro-ecological zones where integrated agroforestry and regenerative agriculture can act as levers for holistic transformation—improving productivity, resilience, and ecological health.</li>
+                        <li><strong>Spot Entry Points for Impact:</strong> Working with local actors, we map opportunities where targeted interventions—in agriculture, water systems, nutrition, or income diversification—can generate systemic change.</li>
+                        <li><strong>Diagnose Problems, Co-Design Solutions:</strong> We undertake structured assessments to understand local challenges and potentials. Using a combination of systems thinking, participatory tools, and technical expertise, we co-design context-specific solutions with communities and partners.</li>
+                        <li><strong>Build Collaborative Ecosystems:</strong> We convene multi-stakeholder ecosystems, engaging farmer networks, civil society, research institutions, private sector actors, and government bodies to align around shared objectives and enable collaborative implementation.</li>
+                        <li><strong>Facilitate Systemic and Outcome-Based Financing:</strong> We develop financing pathways by blending government schemes, donor grants, CSR, and private capital. Where feasible, we explore outcome-based models—tying financing to results across livelihoods, carbon, nutrition, or water security.</li>
+                        <li><strong>Activate and Scale Integrated Solutions:</strong> Our focus is on integrated delivery—from on-farm pilots to district-level scale. This includes technical training, capacity building, value chain development, institutional strengthening, and monitoring systems that track real-world impact.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
 
-.main-nav ul li {
-    margin-left: 25px;
-}
+        <section id="partners-image" class="background-image-section" style="background-image: url('DSC_1129.jpg');">
+            <div class="overlay">
+                <div class="container">
+                    <h2>Partners</h2>
+                    <p class="section-description">We are a collaborative bringing together diverse skills, resources, and capacities essential for systems change. Our core team is formed through a partnership of three organizations:</p>
+                </div>
+            </div>
+        </section>
 
-.main-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 1.1em;
-    padding: 5px 0;
-    transition: color 0.3s ease;
-    position: relative;
-}
+        <section id="partners-logos" class="white-background-section">
+            <div class="container">
+                <div class="partner-logos-container">
+                    <a href="https://ecociateconsultants.com/" target="_blank">
+                        <img src="ecociate-logo.png" alt="Ecociate Consultants Private Limited Logo">
+                    </a>
+                    <a href="https://www.datamuse.io/" target="_blank">
+                        <img src="datamuse-logo.png" alt="Datamuse LLC Logo">
+                    </a>
+                    <a href="https://mant.org.in/" target="_blank">
+                        <img src="mant-logo.png" alt="Manbhum Ananda Ashram Nityananda Trust (MANT) Logo">
+                    </a>
+                </div>
+            </div>
+        </section>
 
-.main-nav ul li a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    display: block;
-    margin-top: 5px;
-    right: 0;
-    background: white;
-    transition: width 0.3s ease;
-}
+        <section id="our-work" class="background-image-section" style="background-image: url('20230816-8018.jpg');">
+            <div class="overlay">
+                <div class="container">
+                    <h2>Our Work</h2>
+                    <p class="section-description">We are piloting this approach in two districts of West Bengal - Purulia and Jhargram districts. These two drought-prone districts face severe environmental degradation, low soil fertility, erratic rainfall, and unstable agricultural livelihoods. Hilly terrain, poor water retention, and over-reliance on rainfed paddy farming limit income opportunities and drive seasonal migration.</p>
+                    <div class="work-details">
+                        <div class="work-col">
+                            <h3>Problem Indicators</h3>
+                            <ul class="problem-list">
+                                <li><strong>40% of arable land is degraded.</strong></li>
+                                <li><strong>33% of food produced for human consumption is either lost or wasted.</strong></li>
+                                <li><strong>2 billion people suffer from various forms of malnutrition.</strong></li>
+                                <li><strong>70% of freshwater withdrawals are related to food and agriculture.</strong></li>
+                            </ul>
+                        </div>
+                        <div class="work-col">
+                            <h3>Vision</h3>
+                            <ul class="vision-list">
+                                <li><strong>10,000+ smallholder farmers.</strong></li>
+                                <li><strong>16,000+ hectares under agroforestry & regenerative cultivation.</strong></li>
+                                <li><strong>Long-term outcomes: Food & income security, water resilience, ecosystem regeneration.</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-.main-nav ul li a:hover::after {
-    width: 100%;
-    left: 0;
-    background: #FFD700;
-}
+        <section id="implementation" class="background-image-section" style="background-image: url('IMG_2826.jpg');">
+            <div class="overlay">
+                <div class="container">
+                    <h2>Implementation Model Components</h2>
+                    <p class="section-description">The approach is anchored in three key components.</p>
+                    <div class="implementation-grid">
+                        <div class="implementation-item">
+                            <img src="IMG_1482.jpg" alt="Women planting paddy in a field">
+                            <h3>Homestead Agroforestry</h3>
+                            <p>Built around the household environment, this approach utilizes available natural resources to support nutrition, income, and ecological resilience. It emphasizes integrated farming systems that include diverse crops, small livestock, and organic inputs to enhance self-sufficiency and sustainability at the homestead level.</p>
+                        </div>
+                        <div class="implementation-item">
+                            <img src="20230816-8018.jpg" alt="A farmer working in a field">
+                            <h3>Farm-Based Agroforestry</h3>
+                            <p>Tailored for slightly larger land parcels, this brings together tree cultivation with intercrops to boost both ecological and economic outcomes. It encourages resource-efficient practices, diversified production, and regenerative inputs to improve long-term land health and farm viability.</p>
+                        </div>
+                        <div class="implementation-item">
+                            <img src="IMG_2640.jpg" alt="Agroforestry farm in the countryside">
+                            <h3>Regenerative Paddy Cultivation</h3>
+                            <p>Focusing on transforming traditional rice farming, this promotes water-saving methods and seasonal diversification. It aims to lower environmental impact, improve year-round productivity, and drive integrated systems that link food security with climate resilience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-#hero {
-    background-image: url('hero-background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: white;
-    padding: 120px 0;
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-}
+        <section id="benefits" class="background-image-section" style="background-image: url('DSC_8846.jpg');">
+            <div class="overlay">
+                <div class="container">
+                    <h2>Benefits of Agroforestry and Regenerative Agriculture</h2>
+                    <div class="benefits-content">
+                        <img src="benefits-diagram.png" alt="Benefits of Agroforestry and Regenerative Agriculture Diagram" class="benefits-img">
+                        <ul class="benefits-list">
+                            <li><strong>Soil Conservation:</strong> Mitigating Soil Erosion and Improving Soil Fertility.</li>
+                            <li><strong>Water Management:</strong> Increasing Water Infiltration and Reducing Evaporation Losses.</li>
+                            <li><strong>Carbon Sequestration:</strong> Absorbing Atmospheric CO2 and Offsetting Carbon Emissions.</li>
+                            <li><strong>Diversified Livelihoods:</strong> Income from Fruit-bearing Trees and Income from Medicinal Plants.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-.hero-content {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 40px;
-    border-radius: 10px;
-    margin: 0 auto;
-    max-width: 800px;
-}
+        <section id="contact" class="background-image-section" style="background-image: url('IMG_2826.jpg');">
+            <div class="overlay">
+                <div class="container">
+                    <h2>Get In Touch With Us</h2>
+                    <div class="contact-card">
+                        <p>For more information, please contact Mr. Soumya Chando of MANT.</p>
+                        <a href="https://wa.me/919771424429" target="_blank" class="whatsapp-btn">
+                            <img src="whatsapp-logo.png" alt="WhatsApp Logo" class="whatsapp-logo">
+                            Message on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-#hero h1 {
-    font-size: 3.5em;
-    margin: 0;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
-}
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sanjeevan. All rights reserved.</p>
+        </div>
+    </footer>
 
-#hero h2 {
-    color: #FFD700;
-    font-size: 1.8em;
-    font-weight: 400;
-    margin: 10px 0 20px 0;
-    border-bottom: none;
-}
-
-#hero p {
-    font-size: 1.2em;
-    font-weight: 300;
-    line-height: 1.6;
-}
-
-section {
-    padding: 80px 0;
-    border-bottom: 1px solid #e0e0e0;
-    position: relative;
-    overflow: hidden;
-}
-
-.background-image-section {
-    background-size: cover;
-    background-position: center;
-    color: white;
-}
-
-.background-image-section .overlay {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 80px 0;
-}
-
-#about .overlay {
-    background-color: rgba(0, 0, 0, 0.9);
-}
-
-.background-image-section h2, .background-image-section h3 {
-    color: #FFD700;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
-}
-
-.background-image-section .section-description,
-.background-image-section .work-details,
-.background-image-section .benefits-content,
-.background-image-section .benefits-list,
-.background-image-section .contact-card {
-    color: white;
-}
-
-.background-image-section .focus-list,
-.background-image-section .work-list,
-.background-image-section .work-col,
-.background-image-section .approach-item,
-.background-image-section .implementation-item,
-.background-image-section .benefits-list li {
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-}
-
-.background-image-section .approach-item:hover, .background-image-section .implementation-item:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-    transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-#about .about-content .about-text p {
-    color: white;
-}
-
-h2 {
-    color: #FFD700;
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 2.5em;
-    font-weight: 600;
-    position: relative;
-    display: inline-block;
-}
-
-h2::after {
-    content: '';
-    position: absolute;
-    width: 60px;
-    height: 4px;
-    background: #FFD700;
-    bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.section-description {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 50px auto;
-    font-weight: 400;
-    font-size: 1.1em;
-}
-
-h3 {
-    color: #FFD700;
-    font-size: 1.6em;
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-weight: 600;
-}
-
-.white-background-section {
-    background-color: #fff;
-    padding: 80px 0;
-}
-
-#partners .section-description {
-    color: #444;
-}
-
-#partners h2 {
-    color: #3C6E3D;
-}
-
-#partners h2::after {
-    background: #3C6E3D;
-}
-
-.partner-logos-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 50px;
-    margin-top: 20px;
-}
-
-.partner-logos-container img {
-    height: 100px;
-    width: auto;
-    max-width: 150px;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-}
-
-.partner-logos-container img:hover {
-    transform: scale(1.1);
-}
-
-.work-details {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.work-col h3 {
-    text-align: center;
-}
-
-.implementation-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
-    margin-top: 40px;
-}
-
-.implementation-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.benefits-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.benefits-img {
-    max-width: 100%;
-    height: auto;
-    margin: 40px auto;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    border-radius: 8px;
-}
-
-.benefits-list {
-    list-style-type: none;
-    padding-left: 0;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.benefits-list li {
-    margin-bottom: 15px;
-}
-
-.benefits-list li strong {
-    color: #FFD700;
-}
-
-#contact .contact-card {
-    text-align: center;
-    padding: 40px;
-    background-color: rgba(0,0,0,0.4);
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.whatsapp-btn {
-    display: inline-flex;
-    align-items: center;
-    padding: 15px 30px;
-    background-color: #25D366;
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 50px;
-    margin-top: 25px;
-    transition: background-color 0.3s ease;
-}
-
-.whatsapp-btn:hover {
-    background-color: #128C7E;
-}
-
-.whatsapp-logo {
-    height: 24px;
-    margin-right: 10px;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 30px 0;
-}
-
-footer p {
-    margin: 0;
-}
-
-@media (max-width: 768px) {
-    .main-header .container {
-        flex-direction: column;
-        justify-content: center;
-    }
-    .main-nav {
-        margin-top: 15px;
-    }
-    .main-nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .main-nav ul li {
-        margin: 5px 10px;
-    }
-    .logo {
-        height: 80px;
-    }
-    #hero h1 {
-        font-size: 2.5em;
-    }
-    .work-details {
-        grid-template-columns: 1fr;
-    }
-    .partner-logos-container {
-        flex-direction: column;
-        gap: 30px;
-    }
-}
+</body>
+</html>
