@@ -173,6 +173,10 @@ section {
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
+#how-we-work .work-list li strong {
+    color: #FFD700;
+}
+
 #about .about-content .about-text p {
     color: white;
 }
