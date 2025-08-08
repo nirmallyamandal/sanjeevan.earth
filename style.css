@@ -152,8 +152,10 @@ section:nth-child(even) {
     color: white;
 }
 
-.background-image-section .approach-item,
+.background-image-section .focus-list,
+.background-image-section .work-list,
 .background-image-section .work-col,
+.background-image-section .approach-item,
 .background-image-section .implementation-item,
 .background-image-section .benefits-list li {
     background-color: rgba(0, 0, 0, 0.4);
@@ -206,6 +208,11 @@ h3 {
     font-weight: 600;
 }
 
+.background-image-section .focus-list,
+.background-image-section .work-list {
+    background: rgba(255, 255, 255, 0.1);
+}
+
 .focus-list, .work-list, .problem-list, .vision-list {
     list-style-type: none;
     padding-left: 0;
@@ -223,51 +230,6 @@ h3 {
 
 .work-list li strong {
     color: #4CAF50;
-}
-
-.focus-content, .partners-content {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.focus-content .focus-list, .partners-content .section-description {
-    max-width: 600px;
-    margin: 0;
-}
-
-.focus-image-container, .partners-image-container {
-    flex-shrink: 0;
-    max-width: 400px;
-}
-
-.focus-image-container img, .partners-image-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-.approach-grid, .implementation-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
-    margin-top: 40px;
-}
-
-.approach-item, .implementation-item {
-    background: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.implementation-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
 }
 
 .partner-logos {
@@ -301,6 +263,20 @@ h3 {
 
 .work-col h3 {
     text-align: center;
+}
+
+.implementation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.implementation-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 .benefits-content {
@@ -402,8 +378,5 @@ footer p {
     .partner-logos {
         flex-direction: column;
         gap: 30px;
-    }
-    .focus-content, .partners-content {
-        flex-direction: column;
     }
 }
