@@ -2,13 +2,13 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+    background-color: #f8f8f8; /* Lighter background for a cleaner look */
+    color: #444;
+    line-height: 1.8;
 }
 
 .container {
-    max-width: 960px;
+    max-width: 1000px; /* Slightly wider container */
     margin: 0 auto;
     padding: 20px;
 }
@@ -16,9 +16,9 @@ body {
 .main-header {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 0;
+    padding: 15px 0;
     text-align: center;
-    border-bottom: 5px solid #388E3C;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .main-header .container {
@@ -44,47 +44,49 @@ body {
     background-position: center;
     background-attachment: fixed;
     color: white;
-    padding: 100px 0;
+    padding: 120px 0;
     position: relative;
     text-align: center;
     overflow: hidden;
 }
 
 .hero-content {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 40px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 #hero h2 {
     color: white;
-    font-size: 2.5em;
+    font-size: 2.8em;
     font-weight: 600;
-    border-bottom: none;
-    display: block;
     margin: 0 0 20px 0;
-    padding: 0;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    border-bottom: none;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
 #hero p {
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: 300;
+    line-height: 1.6;
 }
 
 section {
-    padding: 60px 0;
-    border-bottom: 1px solid #ddd;
+    padding: 80px 0;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 section:nth-child(even) {
-    background-color: #e9e9e9;
+    background-color: #f2f2f2;
 }
 
 h2 {
     color: #4CAF50;
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 2em;
+    margin-bottom: 50px;
+    font-size: 2.5em;
     font-weight: 600;
     position: relative;
     display: inline-block;
@@ -93,40 +95,43 @@ h2 {
 h2::after {
     content: '';
     position: absolute;
-    width: 60%;
-    height: 3px;
+    width: 60px;
+    height: 4px;
     background: #4CAF50;
-    bottom: -10px;
-    left: 20%;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .section-description {
     text-align: center;
-    max-width: 700px;
-    margin: 0 auto 40px auto;
-    font-weight: 300;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    font-weight: 400;
+    font-size: 1.1em;
 }
 
 h3 {
     color: #388E3C;
-    font-size: 1.5em;
+    font-size: 1.6em;
     margin-top: 0;
     margin-bottom: 15px;
+    font-weight: 600;
 }
 
 .focus-list, .work-list, .problem-list, .vision-list {
     list-style-type: none;
     padding-left: 0;
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
 .focus-list li, .work-list li, .problem-list li, .vision-list li {
     background: #fff;
-    padding: 15px 20px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    padding: 20px 25px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
 .work-list li strong {
@@ -136,20 +141,20 @@ h3 {
 .approach-grid, .implementation-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
+    gap: 40px;
+    margin-top: 40px;
 }
 
 .approach-item, .implementation-item {
     background: #fff;
     padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
 }
 
 .approach-item:hover, .implementation-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
 }
 
 .partner-logos {
@@ -157,14 +162,13 @@ h3 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 40px;
-    margin-top: 40px;
+    gap: 50px;
+    margin-top: 50px;
 }
 
 .partner-logos img {
     height: 100px;
-    width: auto;
-    max-width: 150px;
+    width: 150px;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
@@ -176,8 +180,8 @@ h3 {
 .work-details {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    max-width: 800px;
+    gap: 40px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -194,34 +198,38 @@ h3 {
 .benefits-img {
     max-width: 100%;
     height: auto;
-    margin: 20px auto 40px auto;
+    margin: 40px auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
 }
 
 .benefits-list {
     list-style-type: disc;
     padding-left: 20px;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 #contact .contact-card {
     text-align: center;
-    padding: 30px;
+    padding: 40px;
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 600px;
     margin: 0 auto;
 }
 
 .whatsapp-btn {
     display: inline-flex;
     align-items: center;
-    padding: 12px 25px;
+    padding: 15px 30px;
     background-color: #25D366;
     color: white;
     text-decoration: none;
     font-weight: 600;
     border-radius: 50px;
-    margin-top: 20px;
+    margin-top: 25px;
     transition: background-color 0.3s ease;
 }
 
@@ -230,7 +238,7 @@ h3 {
 }
 
 .whatsapp-logo {
-    height: 20px;
+    height: 24px;
     margin-right: 10px;
 }
 
@@ -249,21 +257,23 @@ footer p {
     .main-header h1 {
         font-size: 2em;
     }
-
     .logo {
         height: 60px;
     }
-
     #hero h2 {
         font-size: 2em;
     }
-
     .work-details {
         grid-template-columns: 1fr;
     }
-
     .partner-logos {
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
+    }
+    .benefits-content {
+        flex-direction: column;
+    }
+    .benefits-list {
+        margin-top: 20px;
     }
 }
