@@ -158,7 +158,7 @@ section {
 }
 
 .background-image-section .overlay {
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.9);
     padding: 80px 0;
 }
 
@@ -240,13 +240,17 @@ h3 {
     padding: 80px 0;
 }
 
+.white-background-section h2 {
+    margin-bottom: 20px;
+}
+
 .white-background-section .partner-logos {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
-    margin-top: 0;
+    margin-top: 20px;
 }
 
 .partner-logos img {
