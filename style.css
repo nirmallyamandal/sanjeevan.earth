@@ -22,10 +22,12 @@ body {
 }
 
 .main-header .container {
-    display: flex;
+   display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: nowrap; /* This prevents the menu from dropping to a new line */
+    max-width: 1200px; /* Increased from 1000px to give logos more room */
+    margin: 0 auto;
+    padding: 0 20px;
 }
 .brand-link {
     display: flex;
@@ -44,6 +46,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center; /* This ensures the text links are vertically centered with the logos */
 }
 
 .main-nav ul li {
