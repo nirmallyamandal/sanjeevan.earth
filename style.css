@@ -23,12 +23,12 @@ body {
 }
 
 .main-header .container {
-   {
     display: flex;
-    align-items: center; /* Vertically centers everything */
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-between; /* This pushes one item to the left and one to the right */
+    max-width: 1200px; 
     width: 100%;
-    max-width: 1200px;
+    margin: 0 auto;
 }
 .brand-link {
     display: flex;
@@ -42,11 +42,11 @@ body {
     width: auto;
 }
 
-.main-nav ul {
+.main-nav {
     display: flex;
     align-items: center;
+    gap: 30px; /* Space between the menu links and the ASM logo */
 }
-
 .main-nav ul li {
     display: flex;
     align-items: center;
