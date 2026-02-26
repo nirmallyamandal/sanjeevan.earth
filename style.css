@@ -25,8 +25,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: nowrap; /* This prevents the menu from dropping to a new line */
 }
-
 .brand-link {
     display: flex;
     align-items: center;
