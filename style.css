@@ -16,18 +16,19 @@ body {
 .main-header {
     background-color: #3C6E3D;
     color: white;
-    padding: 15px 0;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    min-height: 140px;
+    display: flex;
+    align-items: center;
 }
 
 .main-header .container {
-   display: flex;
-    align-items: center;
+   {
+    display: flex;
+    align-items: center; /* Vertically centers everything */
     justify-content: space-between;
-    max-width: 1200px; /* Increased from 1000px to give logos more room */
-    margin: 0 auto;
-    padding: 0 20px;
+    width: 100%;
+    max-width: 1200px;
 }
 .brand-link {
     display: flex;
@@ -42,15 +43,16 @@ body {
 }
 
 .main-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-    align-items: center; /* This ensures the text links are vertically centered with the logos */
+    align-items: center;
 }
 
 .main-nav ul li {
-    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .main-nav ul li a {
