@@ -1,151 +1,139 @@
+/* GLOBAL STYLES */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
     color: #444;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
-/* Container width increased slightly to fit the extra logo */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
+/* HEADER & NAVIGATION */
 .main-header {
     background-color: #3C6E3D;
     color: white;
-    padding: 10px 0;
+    padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.main-header .container {
+.header-flex {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-between; /* This pushes logos to ends and menu to center */
 }
 
-.logo {
-    height: 90px; /* Uniform height for both logos */
+.main-logo {
+    height: 70px;
     width: auto;
-    display: block;
-}
-
-.brand-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-
-.right-logo {
-    display: flex;
-    align-items: center;
 }
 
 .main-nav ul {
-    list-style-type: none;
+    display: flex;
+    list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
+    align-items: center;
 }
 
-.main-nav ul li {
-    margin: 0 12px;
-}
+.main-nav ul li { margin-left: 20px; }
 
 .main-nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: 400;
-    font-size: 0.95em;
-    transition: color 0.3s ease;
+    font-size: 0.95rem;
+    transition: color 0.3s;
 }
 
-.main-nav ul li a:hover {
-    color: #FFD700;
+.main-nav ul li a:hover { color: #FFD700; }
+
+.asm-logo-box {
+    background: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    height: 50px;
+    display: flex;
+    align-items: center;
 }
 
-/* Sections & Typography */
-#hero {
-    background-image: url('hero-background.jpg');
+.asm-logo-box img { height: 100%; width: auto; }
+
+/* SECTIONS & OVERLAYS */
+section { padding: 80px 0; }
+
+.background-image-section {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: white;
-    padding: 120px 0;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 80px 0;
+}
+
+h2 {
+    color: #FFD700;
     text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
 }
 
-.hero-content {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 40px;
-    border-radius: 10px;
-    max-width: 800px;
-    margin: 0 auto;
-}
+.white-background-section { background: white; }
 
-h1 { font-size: 3.5em; margin: 0; }
-h2 { color: #FFD700; text-align: center; margin-bottom: 50px; font-size: 2.2em; position: relative; }
-h2::after { content: ''; position: absolute; width: 60px; height: 4px; background: #FFD700; bottom: -15px; left: 50%; transform: translateX(-50%); }
-
-.background-image-section { background-size: cover; background-position: center; color: white; }
-.background-image-section .overlay { background-color: rgba(0, 0, 0, 0.6); padding: 80px 0; }
-
-/* Grid Layouts */
-.approach-grid, .implementation-grid {
+/* GRIDS */
+.implementation-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
 
-.approach-item, .implementation-item {
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    border-radius: 8px;
+.implementation-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-.partner-logos-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    flex-wrap: wrap;
+.implementation-item h3 { color: #3C6E3D; margin-top: 15px; }
+
+/* HERO */
+#hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 150px 0;
+    text-align: center;
 }
 
-.partner-logos-container img { height: 80px; filter: grayscale(100%); transition: 0.3s; }
-.partner-logos-container img:hover { filter: grayscale(0%); transform: scale(1.1); }
+#hero h1 { font-size: 4rem; margin: 0; }
 
-.work-details { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-
-/* Footer & Buttons */
+/* BUTTONS */
 .whatsapp-btn {
-    display: inline-flex;
-    align-items: center;
+    display: inline-block;
     padding: 12px 25px;
-    background-color: #25D366;
+    background: #25D366;
     color: white;
     text-decoration: none;
-    border-radius: 50px;
-    font-weight: 600;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 20px;
 }
 
-footer { background-color: #222; color: #ccc; text-align: center; padding: 20px 0; }
-
-/* Mobile Responsiveness */
+/* MOBILE RESPONSIVE */
 @media (max-width: 992px) {
-    .main-header .container {
-        flex-direction: column;
-        gap: 15px;
-    }
-    .main-nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .logo { height: 60px; }
-    .work-details { grid-template-columns: 1fr; }
+    .header-flex { flex-direction: column; }
+    .main-nav ul { flex-wrap: wrap; justify-content: center; margin-top: 15px; }
+    .main-nav ul li { margin: 5px 10px; }
+    .asm-li { margin-top: 10px; }
 }
