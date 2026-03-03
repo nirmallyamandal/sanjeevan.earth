@@ -1,31 +1,151 @@
-/* This ensures all three items spread out evenly */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #444;
+    line-height: 1.8;
+}
+
+/* Container width increased slightly to fit the extra logo */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-header {
+    background-color: #3C6E3D;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
 .main-header .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    max-width: 1200px; /* Slightly wider to accommodate two logos */
+    justify-content: space-between; /* This pushes logos to ends and menu to center */
 }
 
-/* Keeps both logos the same height */
 .logo {
-    height: 100px; /* Reduced slightly from 120px to save space */
+    height: 90px; /* Uniform height for both logos */
     width: auto;
+    display: block;
 }
 
-/* Adds a little space around the right logo */
+.brand-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
 .right-logo {
     display: flex;
     align-items: center;
 }
 
-/* Mobile Fix: Stack them neatly on small screens */
-@media (max-width: 768px) {
+.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin: 0 12px;
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.95em;
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Sections & Typography */
+#hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 120px 0;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 { font-size: 3.5em; margin: 0; }
+h2 { color: #FFD700; text-align: center; margin-bottom: 50px; font-size: 2.2em; position: relative; }
+h2::after { content: ''; position: absolute; width: 60px; height: 4px; background: #FFD700; bottom: -15px; left: 50%; transform: translateX(-50%); }
+
+.background-image-section { background-size: cover; background-position: center; color: white; }
+.background-image-section .overlay { background-color: rgba(0, 0, 0, 0.6); padding: 80px 0; }
+
+/* Grid Layouts */
+.approach-grid, .implementation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.approach-item, .implementation-item {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.partner-logos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.partner-logos-container img { height: 80px; filter: grayscale(100%); transition: 0.3s; }
+.partner-logos-container img:hover { filter: grayscale(0%); transform: scale(1.1); }
+
+.work-details { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+
+/* Footer & Buttons */
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 25px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+footer { background-color: #222; color: #ccc; text-align: center; padding: 20px 0; }
+
+/* Mobile Responsiveness */
+@media (max-width: 992px) {
     .main-header .container {
         flex-direction: column;
         gap: 15px;
     }
-    
-    .logo {
-        height: 60px; /* Smaller logos on phones */
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
     }
+    .logo { height: 60px; }
+    .work-details { grid-template-columns: 1fr; }
 }
