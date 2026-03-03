@@ -42,9 +42,19 @@ body {
     text-decoration: none;
 }
 
+/* This creates the white box behind the ASM logo */
 .right-logo {
     display: flex;
     align-items: center;
+    background-color: #ffffff; /* White background */
+    padding: 8px 15px; /* Spacing inside the white box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Soft shadow for depth */
+}
+
+/* Specific size adjustment for the ASM logo inside the white box if needed */
+.right-logo .logo {
+    height: 70px; /* Making it slightly smaller within the white container for padding */
 }
 
 .main-nav ul {
@@ -146,6 +156,12 @@ footer { background-color: #222; color: #ccc; text-align: center; padding: 20px 
         flex-wrap: wrap;
         justify-content: center;
     }
+    
     .logo { height: 60px; }
+    
+    .right-logo .logo {
+        height: 50px; /* Maintain smaller size within white container on mobile */
+    }
+    
     .work-details { grid-template-columns: 1fr; }
 }
